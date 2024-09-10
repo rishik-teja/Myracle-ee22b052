@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Testing Instructions Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Testing Instructions</h1>
+        <form id="testingForm" enctype="multipart/form-data">
+            <label for="context">Optional Context:</label>
+            <textarea id="context" name="context" rows="4" placeholder="Enter additional context..."></textarea>
+
+            <label for="screenshots">Upload Screenshots (required):</label>
+            <input type="file" id="screenshots" name="screenshots" accept="image/*" multiple required>
+
+            <button type="button" id="generateInstructions">Describe Testing Instructions</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
